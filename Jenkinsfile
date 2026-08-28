@@ -62,7 +62,7 @@ pipeline {
                 body: body,
                 to: 'justbj@live.com',
                 from: 'rulesxx@gmail.com',
-                replyTo: 'jenkins@devopsshack.com',
+                replyTo: 'rulesxx@gmail.com',
                 mimeType: 'text/html',
                
             )
