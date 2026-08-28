@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+        //Git checkout
         stage('Git Checkout') {
             steps {
                 git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/Bjrules/Capstone-DotNET-Mongo-CD-main.git'
