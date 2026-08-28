@@ -10,6 +10,7 @@ pipeline {
         }
         
         stage('Deploy To Kubernetes') {
+            //Deply to kubernetes
             steps {
                 script {
                     withKubeConfig(caCertificate: '', clusterName: 'bnj-cluster', contextName: '', credentialsId: 'K8s-token', namespace: 'webapps', restrictKubeConfigAccess: false, serverUrl: 'https://95C845321242AE5D617824C874922E95.gr7.us-east-1.eks.amazonaws.com') {
